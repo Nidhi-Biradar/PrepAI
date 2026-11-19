@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-heading: "Outfit", -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-serif: "Fraunces", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0d0f18;
+  color: #f1f5f9;
+  overflow-x: hidden;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Different font families for distinct aesthetic hierarchy */
+.font-display {
+  font-family: "Outfit", var(--font-sans);
+}
+
+.font-editorial {
+  font-family: "Fraunces", var(--font-serif);
+}
+
+.font-sans-clean {
+  font-family: "Plus Jakarta Sans", var(--font-sans);
+}
+
+/* Sleek dark scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111422;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #272d42;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3c4462;
+}
+
+/* Crisp focus rings for accessibility */
+*:focus-visible {
+  outline: 2px solid #a855f7;
+  outline-offset: 2px;
+}
+
+
